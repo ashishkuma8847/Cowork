@@ -7,7 +7,7 @@ import MobileMenu from "./Headermobile"
 const Header = () => {
     return (
         <header className="container">
-            <div className="lg:py-[35px] py-[25px] font-inter flex justify-between items-center">
+            <div className="lg:pt-[35px] lg:pb-[39px] py-[25px] pb-[25px] font-inter flex justify-between items-center">
                 <div className="flex gap-[10px] items-center w-[173px]">
                     <Image src={"/svg/mainicon.svg"} width={34} height={30} alt="main image" />
                     <h1 className=" text-[20px] font-semibold">Cowork Mate</h1>

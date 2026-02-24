@@ -1,24 +1,30 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "tailwindcss";
 
 @theme inline {
   --color-darkGray: #555555;
   --color-orange: #EAA423;
-  --color-purpule: #765AFF;
+  --color-violet: #765AFF;
   --color-whiteGray: #F0F0F0;
   --color-darkPurpule: #6A39F2;
   --font-poppins: var(--font-poppins);
   --font-inter: var(--font-inter);
 }
 
+.border_linear {
+background: linear-gradient(180deg, #5714F4 0%, #FFFFFF 64.42%);
+}
 .linear_color {
   background: linear-gradient(180deg, #480CED 0%, #6A39F2 100%);
 }
 
+.colorset{
+  background: white;
+}
+
 .container{
-  max-width: 1343px;
+  max-width: 1360px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
