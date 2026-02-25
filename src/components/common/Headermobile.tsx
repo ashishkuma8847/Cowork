@@ -25,7 +25,7 @@ export default function MobileMenu() {
                         {
                             headerjson.pages.map((item: { title: string, path: string }, index: number) => (
                                 <DropdownMenuItem>
-                                    <Link href={item.path} key={index}>
+                                    <Link href={item.path} key={item.path}>
                                         <h1 className="font-medium text-[16px]">{item.title}</h1>
                                     </Link>
                                 </DropdownMenuItem>

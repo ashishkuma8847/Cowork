@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 type HeadingProps = {
   title?: string;
   pagragraph?: string;
@@ -14,19 +12,15 @@ const Heading = ({title,pagragraph,cMain,cParagraph,cTitle,cTitleMain}:HeadingPr
     <>
       <div className={` ${cMain??""} flex flex-col gap-3 md:gap-6 font-inter justify-center items-center  ${cMain??""}`}>
         <div className={`  flex w-full justify-center lg:justify-between items-start ${cTitleMain??""}`}>
-          <Image
+          <img
             className="lg:block hidden py-[22px] w-[164px]"
             src="/svg/leftlinebar.svg"
             alt="leftlinebar"
-            width={164}
-            height={8}
           />
           <h4 className={`  md:font-semibold text-center font-medium font-inter text-[22px] md:text-[43px] leading-[130%] ${cTitle??""}`}>
             {title??""}
           </h4>
-          <Image
-          width={164}
-          height={8}
+          <img
             className="lg:block py-[22px] hidden w-[164px]"
             src="/svg/rightlinebar.svg"
             alt="rightlinebar"

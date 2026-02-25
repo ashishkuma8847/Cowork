@@ -15,7 +15,7 @@ const Header = () => {
                 <div className=" lg:flex hidden font-medium text-[18px] w-[442px] justify-between items-center ">
                     {
                         headerjson.pages.map((item: { title: string, path: string }, index: number) => (
-                            <Link href={item.path} key={index}>
+                            <Link href={item.path} key={index+Date.now()}>
                                 <h1>{item.title}</h1>
                             </Link>
                         ))
@@ -24,8 +24,8 @@ const Header = () => {
                 <div className=" lg:flex hidden w-[138px] justify-between items-center ">
                     {
                         headerjson.icons.map((item: { path: string }, index: number) => (
-                            <button key={index} className="cursor-pointer">
-                                <Image src={`/svg/${item.path}`} width={26} height={26} alt="icons" />
+                            <button key={index+Date.now()} className="cursor-pointer">
+                                <img src={`/svg/${item.path}`}  alt="icons" />
                             </button>
                         ))
                     }
