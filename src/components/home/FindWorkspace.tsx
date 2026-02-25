@@ -26,7 +26,7 @@ const FindWorkspace = () => {
                     <CustomButton className="px-[40px]  py-[12px]  text-xs lg:text-lg leading-[130%]" children={"Search"} type="gradient"/>
                  </div>
                  <div className="lg:flex hidden gap-[32px] ">
-                    <Link href={""}> <CustomButton className="px-[40px] py-[20px] text-xl leading-[130%] " children={"Explore Workspaces"} type="gradient"/></Link>
+                    <Link href={"/workspaces"}> <CustomButton className="px-[40px] py-[20px] text-xl leading-[130%] " children={"Explore Workspaces"} type="gradient"/></Link>
                    
                     <Link href={""}><CustomButton className="px-[40px] py-[20px] text-xl leading-[130%]" children={"Log In"} type="gradient"/></Link>
                     
